@@ -3,14 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- LABEL: "Work" is the neutral default. Researchers: rename to "Publications". Students: "Projects".
-     Change it in the nav link on all four pages, the <h1> below, and this <title>. -->
-<title>Work · Alex Morgan</title>
-<meta name="description" content="Papers, projects, posters and talks by Alex Morgan.">
+<title>Projects · Nhat Minh (Claire) Luong</title>
+<meta name="description" content="Projects, competitions, and analytical case studies by Nhat Minh (Claire) Luong.">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/site.css">
 <script src="js/theme.js"></script>
@@ -19,83 +17,81 @@
 <body>
 
 <nav class="nav" aria-label="Main">
-  <!-- EDIT: your name; links back to the home page -->
-  <a class="nav-name" href="index.html">Alex Morgan</a>
+  <a class="nav-name" href="index.html">Nhat Minh (Claire) Luong</a>
   <a href="about.html">About</a>
   <a href="research.html">Research</a>
-  <a href="work.html" aria-current="page">Work</a>
+  <a href="work.html" aria-current="page">Projects</a>
 </nav>
 
 <main>
   <header class="page-head">
-    <h1>Work</h1>
+    <h1>Projects</h1>
     <hr class="short-rule">
-    <!-- EDIT: one line on how to read this page. Students: say what these projects were for (course, lab, thesis, side project). -->
-    <p>Papers, projects, posters and talks — the things I've made and presented.</p>
+    <p>Advisory engagements, student research competitions, and data analysis projects.</p>
   </header>
 
-  <section class="section flush-top" aria-label="Work list">
+  <section class="section flush-top" aria-label="Projects list">
     <div class="wrap">
 
-      <!-- Filters: each button's data-filter matches an entry's data-type. Delete buttons you don't need (e.g. Papers, if you have none yet). -->
+      <!-- Filter buttons -->
       <div class="filters" role="group" aria-label="Filter by type">
         <button type="button" class="filter" data-filter="all" aria-pressed="true">All</button>
-        <button type="button" class="filter" data-filter="paper" aria-pressed="false">Papers</button>
-        <button type="button" class="filter" data-filter="project" aria-pressed="false">Projects</button>
-        <button type="button" class="filter" data-filter="poster" aria-pressed="false">Posters</button>
-        <button type="button" class="filter" data-filter="talk" aria-pressed="false">Talks</button>
+        <button type="button" class="filter" data-filter="competition" aria-pressed="false">Competitions</button>
+        <button type="button" class="filter" data-filter="analytics" aria-pressed="false">Data &amp; Analytics</button>
+        <button type="button" class="filter" data-filter="advisory" aria-pressed="false">Advisory &amp; Research</button>
       </div>
 
-      <!-- One .year-group per year; one .entry per item. Only the title is required: drop the authors line,
-           the description, the tags or any link you don't have. The first line ("Journal · Name") is the type and venue.
-           Papers/preprints use data-type="paper"; theses and course/lab/personal work use "project". -->
+      <!-- Year 2026 -->
+      <section class="year-group" aria-labelledby="y2026">
+        <h2 class="year" id="y2026">2026</h2>
+        <article class="entry" data-type="competition">
+          <p class="when">Competition · RMIT University Vietnam (Top 5 Finalist)</p>
+          <h3>RMIT Research Challenge 2026: Equity Analysis on Vietnam Fumigation JSC</h3>
+          <p>Evaluated the business fundamentals, profitability, and competitive positioning of Vietnam Fumigation JSC (VFG). Researched agrochemicals and logistics protection industries, assessing market dynamics, regulatory developments, and customer demand to deliver investment recommendations.</p>
+          <div class="tags"><span class="tag">Financial Analysis</span><span class="tag">Industry Benchmarking</span></div>
+        </article>
+
+        <article class="entry" data-type="advisory">
+          <p class="when">Advisory · PwC Vietnam (Deals Practice)</p>
+          <h3>Capital Projects &amp; Infrastructure Advisory Engagements</h3>
+          <p>Supported commercial due diligence (CDD) and market research; researched Vietnam's energy regulations, government decrees, and investment guidelines; assisted project finance reviews across funding sources and institutions.</p>
+          <div class="tags"><span class="tag">Due Diligence</span><span class="tag">Energy Policy</span><span class="tag">Market Research</span></div>
+        </article>
+      </section>
+
+      <!-- Year 2025 -->
       <section class="year-group" aria-labelledby="y2025">
         <h2 class="year" id="y2025">2025</h2>
-        <article class="entry" data-type="paper">
-          <p class="when">Journal · Journal Name, 12(3): 456–478</p>
-          <h3><a href="https://doi.org/">Title of your most recent paper goes here</a></h3>
-          <p class="authors"><strong>A. Morgan</strong>, B. Collaborator, C. Collaborator</p>
-          <div class="links"><a href="https://doi.org/">DOI</a><a href="files/placeholder.pdf">PDF</a><a href="https://github.com/">Code</a></div>
+        <article class="entry" data-type="competition">
+          <p class="when">Competition · Foreign Trade University HCMC (Top 8 Finalist)</p>
+          <h3>Financial Student Contest: Six-Year Performance Analysis of Gemadept</h3>
+          <p>Conducted a six-year financial performance analysis of Gemadept Corporation (GMD) to evaluate profitability, capital allocation, leverage, and operational efficiency. Assessed strategic expansion opportunities through commercial synergies.</p>
+          <div class="tags"><span class="tag">Financial Statements</span><span class="tag">Performance Analysis</span></div>
         </article>
-        <article class="entry" data-type="project">
-          <p class="when">Project · Course, lab or personal</p>
-          <h3><a href="https://github.com/">Name of a project you built or ran</a></h3>
-          <p>One or two sentences: what problem it tackled, what you did, what came out of it.</p>
-          <div class="tags"><span class="tag">Tool</span><span class="tag">Method</span><span class="tag">Language</span></div>
-          <div class="links"><a href="files/placeholder.pdf">Report</a><a href="https://github.com/">Code</a><a href="https://example.com/">Demo</a></div>
+
+        <article class="entry" data-type="analytics">
+          <p class="when">Analytics · Personal Project</p>
+          <h3>Commercial Supply Chain Efficiency Analysis</h3>
+          <p>Utilized Python to perform exploratory data analysis (EDA) on a dataset of 30,000+ commercial records. Isolated systematic efficiency leaks, detecting 8 zero-yield products with high carrying costs to support working capital recommendations.</p>
+          <div class="tags"><span class="tag">Python EDA</span><span class="tag">Data Analysis</span></div>
+        </article>
+
+        <article class="entry" data-type="analytics">
+          <p class="when">Corporate FP&amp;A · Mantu</p>
+          <h3>Multi-Unit Financial Consolidation &amp; Power BI Dashboard Suite</h3>
+          <p>Consolidated, cleaned, and reconciled 16,000+ financial transaction records using Excel and Power Query. Built 3 Power BI dashboards tracking invoicing, revenue trends, and unit profitability to assist FP&amp;A decision-making.</p>
+          <div class="tags"><span class="tag">Power BI</span><span class="tag">Power Query</span><span class="tag">Variance Analysis</span></div>
         </article>
       </section>
 
+      <!-- Year 2024 -->
       <section class="year-group" aria-labelledby="y2024">
         <h2 class="year" id="y2024">2024</h2>
-        <article class="entry" data-type="project">
-          <p class="when">Thesis · University name</p>
-          <h3><a href="files/placeholder.pdf">Title of your thesis or capstone</a></h3>
-          <p class="authors">Supervised by Prof. Name</p>
-          <p>One-sentence summary of the question and the main result.</p>
-          <div class="links"><a href="files/placeholder.pdf">PDF</a></div>
-        </article>
-        <article class="entry" data-type="poster">
-          <p class="when">Poster · Conference or symposium name, City</p>
-          <h3>Title of a poster you presented</h3>
-          <p class="authors"><strong>A. Morgan</strong>, B. Collaborator</p>
-          <div class="links"><a href="files/placeholder.pdf">PDF</a></div>
-        </article>
-      </section>
-
-      <section class="year-group" aria-labelledby="y2023">
-        <h2 class="year" id="y2023">2023</h2>
-        <article class="entry" data-type="paper">
-          <p class="when">Preprint · arXiv / bioRxiv / SSRN</p>
-          <h3><a href="https://arxiv.org/">Title of a preprint you want people to read</a></h3>
-          <p class="authors"><strong>A. Morgan</strong>, C. Collaborator</p>
-          <div class="links"><a href="https://arxiv.org/">Preprint</a></div>
-        </article>
-        <article class="entry" data-type="talk">
-          <p class="when">Talk · Event name, City</p>
-          <h3>Title of a talk or lightning talk</h3>
-          <p class="authors"><strong>A. Morgan</strong></p>
-          <div class="links"><a href="files/placeholder.pdf">Slides</a></div>
+        <article class="entry" data-type="advisory">
+          <p class="when">Leadership · FTU Zone</p>
+          <h3>External Communications &amp; Event Partnerships</h3>
+          <p>Led communications and external partnership relations for university events, coordinating sponsor negotiations, team workflows, and brand outreach.</p>
+          <div class="tags"><span class="tag">Leadership</span><span class="tag">Communication</span></div>
         </article>
       </section>
 
@@ -104,7 +100,7 @@
 </main>
 
 <footer class="foot">
-  <a href="index.html">© 2026 Alex Morgan</a>
+  <a href="index.html">© 2026 Nhat Minh (Claire) Luong</a>
   <button type="button" class="toggle" data-theme-toggle aria-pressed="false"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 1.5a6.5 6.5 0 0 0 0 13z" fill="currentColor"/></svg><span data-theme-label>Dark</span></button>
   <a href="https://github.com/tuannguyen8390/sciencefolio" rel="noopener">Built with Sciencefolio</a>
 </footer>
